@@ -97,4 +97,3 @@ texture_filter = 1
 position = Vector2(1.5, -3.75)
 sprite_frames = SubResource("SpriteFrames_hrlgh")
 animation = &"WalkRight"
-frame_progress = 0.234488
