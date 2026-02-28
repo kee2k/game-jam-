@@ -5,7 +5,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d8tai"]
 size = Vector2(4, 67)
 
-[node name="Sprite2D" type="Sprite2D"]
+[node name="Sprite2D2" type="Sprite2D"]
 texture = ExtResource("1_tablc")
 region_enabled = true
 region_rect = Rect2(120.121, 18.8599, 4.51579, 69.2731)
