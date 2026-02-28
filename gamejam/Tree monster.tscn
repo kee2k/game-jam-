@@ -1,9 +1,10 @@
-[gd_scene load_steps=12 format=3 uid="uid://er0fpfxbjxm1"]
+[gd_scene format=3 uid="uid://er0fpfxbjxm1"]
 
+[ext_resource type="Script" uid="uid://vyjb8e46e3th" path="res://character_body_2d.gd" id="1_s08rr"]
 [ext_resource type="Texture2D" uid="uid://dn2ea2hwwa1bc" path="res://Sprites/Treemonster.png" id="1_vs24f"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1d2wx"]
-size = Vector2(7, 32.5)
+size = Vector2(4, 32.5)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_17h3b"]
 atlas = ExtResource("1_vs24f")
@@ -84,16 +85,28 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Node2D" type="Node2D"]
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1343058644]
+motion_mode = 1
+wall_min_slide_angle = 0.0
+script = ExtResource("1_s08rr")
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="." unique_id=1345879004]
+unique_name_in_owner = true
+debug_enabled = true
+debug_path_custom_color = Color(1, 0, 0, 1)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-position = Vector2(-2.5, 6.75)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=175429963]
+position = Vector2(-4, 6.75)
 shape = SubResource("RectangleShape2D_1d2wx")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D/CollisionShape2D"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CollisionShape2D" unique_id=1212988365]
 texture_filter = 1
 position = Vector2(1.5, -3.75)
 sprite_frames = SubResource("SpriteFrames_hrlgh")
 animation = &"WalkRight"
+
+[node name="Timer" type="Timer" parent="." unique_id=550811563]
+wait_time = 0.087
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

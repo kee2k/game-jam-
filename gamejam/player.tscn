@@ -216,8 +216,11 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_i3pqv"]
+size = Vector2(10, 12)
 
-[node name="CharacterBody2D" type="CharacterBody2D" unique_id=335456609]
+[node name="player" type="CharacterBody2D" unique_id=335456609]
+motion_mode = 1
+wall_min_slide_angle = 0.0
 script = ExtResource("1_4flbx")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=872291189]
@@ -225,4 +228,5 @@ sprite_frames = SubResource("SpriteFrames_onrkg")
 animation = &"move_up"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1866704398]
+position = Vector2(0, 2)
 shape = SubResource("RectangleShape2D_i3pqv")
