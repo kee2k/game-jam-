@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://crqqh7asob1i"]
+
+[ext_resource type="PackedScene" uid="uid://sfojnhakeld5" path="res://player.tscn" id="1_80nbo"]
+
+[node name="Node2D" type="Node2D" unique_id=1568799005]
+
+[node name="CharacterBody2D" parent="." unique_id=246294292 instance=ExtResource("1_80nbo")]
+position = Vector2(0, 1)
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=122070626]
+position_smoothing_enabled = true
