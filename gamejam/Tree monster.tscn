@@ -1,0 +1,100 @@
+[gd_scene load_steps=12 format=3 uid="uid://er0fpfxbjxm1"]
+
+[ext_resource type="Texture2D" uid="uid://dn2ea2hwwa1bc" path="res://Sprites/Treemonster.png" id="1_vs24f"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1d2wx"]
+size = Vector2(7, 32.5)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_17h3b"]
+atlas = ExtResource("1_vs24f")
+region = Rect2(400, 16, 100, 49)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ugj1f"]
+atlas = ExtResource("1_vs24f")
+region = Rect2(500, 16, 100, 49)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e56nv"]
+atlas = ExtResource("1_vs24f")
+region = Rect2(100, 20, 100, 47)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vjgrq"]
+atlas = ExtResource("1_vs24f")
+region = Rect2(0, 20, 100, 47)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cbpdd"]
+atlas = ExtResource("1_vs24f")
+region = Rect2(700, 16, 100, 49)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3ac56"]
+atlas = ExtResource("1_vs24f")
+region = Rect2(600, 16, 100, 49)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6qo5t"]
+atlas = ExtResource("1_vs24f")
+region = Rect2(200, 16, 100, 47)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0cm3a"]
+atlas = ExtResource("1_vs24f")
+region = Rect2(300, 16, 100, 47)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hrlgh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_17h3b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ugj1f")
+}],
+"loop": true,
+"name": &"WalkBack",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e56nv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vjgrq")
+}],
+"loop": true,
+"name": &"WalkFoward",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cbpdd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3ac56")
+}],
+"loop": true,
+"name": &"WalkRight",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6qo5t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0cm3a")
+}],
+"loop": true,
+"name": &"Walkleft",
+"speed": 5.0
+}]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(-2.5, 6.75)
+shape = SubResource("RectangleShape2D_1d2wx")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D/CollisionShape2D"]
+texture_filter = 1
+position = Vector2(1.5, -3.75)
+sprite_frames = SubResource("SpriteFrames_hrlgh")
+animation = &"WalkRight"
+frame_progress = 0.234488
