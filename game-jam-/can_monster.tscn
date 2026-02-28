@@ -1,0 +1,141 @@
+[gd_scene format=3 uid="uid://w0gbvjo0xocr"]
+
+[ext_resource type="Texture2D" uid="uid://3syidlxpyvlq" path="res://Sprites/Rolling can.png" id="1_7vlam"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_23mxo"]
+size = Vector2(5, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nqai5"]
+atlas = ExtResource("1_7vlam")
+region = Rect2(325, 25, 25, 25)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5bevn"]
+atlas = ExtResource("1_7vlam")
+region = Rect2(425, 25, 25, 25)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p35v5"]
+atlas = ExtResource("1_7vlam")
+region = Rect2(525, 25, 25, 25)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_40dvg"]
+atlas = ExtResource("1_7vlam")
+region = Rect2(25, 25, 25, 25)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r54no"]
+atlas = ExtResource("1_7vlam")
+region = Rect2(125, 25, 25, 25)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6ulq5"]
+atlas = ExtResource("1_7vlam")
+region = Rect2(225, 25, 25, 25)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l8dic"]
+atlas = ExtResource("1_7vlam")
+region = Rect2(1050, 25, 25, 25)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ucerl"]
+atlas = ExtResource("1_7vlam")
+region = Rect2(1150, 25, 25, 25)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ypafd"]
+atlas = ExtResource("1_7vlam")
+region = Rect2(1250, 25, 25, 25)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n34bq"]
+atlas = ExtResource("1_7vlam")
+region = Rect2(1350, 25, 25, 25)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gxx2a"]
+atlas = ExtResource("1_7vlam")
+region = Rect2(650, 25, 25, 25)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mplkk"]
+atlas = ExtResource("1_7vlam")
+region = Rect2(750, 25, 25, 25)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pmeet"]
+atlas = ExtResource("1_7vlam")
+region = Rect2(850, 25, 25, 25)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_85gwv"]
+atlas = ExtResource("1_7vlam")
+region = Rect2(950, 25, 25, 25)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1l54y"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nqai5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5bevn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p35v5")
+}],
+"loop": true,
+"name": &"Backcan",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_40dvg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r54no")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6ulq5")
+}],
+"loop": true,
+"name": &"Forwardcan",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l8dic")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ucerl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ypafd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n34bq")
+}],
+"loop": true,
+"name": &"Sidecanright",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gxx2a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mplkk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pmeet")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_85gwv")
+}],
+"loop": true,
+"name": &"sidecan left",
+"speed": 5.0
+}]
+
+[node name="Can monster" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(3.5, 0)
+shape = SubResource("RectangleShape2D_23mxo")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
+texture_filter = 1
+position = Vector2(0, -4)
+sprite_frames = SubResource("SpriteFrames_1l54y")
+animation = &"Backcan"

@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://nfkw4hxk1qj0"]
+
+[ext_resource type="Texture2D" uid="uid://diujpck6u0xur" path="res://Ui and buildings/Recource numbers.png" id="1_d1kvg"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/HBoxContainer"]
+layout_mode = 2
+
+[node name="RecourceNumbers" type="Sprite2D" parent="CanvasLayer/HBoxContainer"]
+texture_filter = 1
+position = Vector2(5, 30)
+texture = ExtResource("1_d1kvg")

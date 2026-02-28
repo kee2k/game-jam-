@@ -1,0 +1,61 @@
+[gd_scene load_steps=3 format=3 uid="uid://6rwda2loavfx"]
+
+[ext_resource type="Texture2D" uid="uid://c080fyprjxakk" path="res://Sprites/Hearts/PNG/basic/heart.png" id="1_mjq6q"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_sgbo7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_mjq6q")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Healthbar" type="CanvasLayer" parent="."]
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Healthbar"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Heart" type="TextureRect" parent="Healthbar/HBoxContainer"]
+layout_mode = 2
+
+[node name="Heart" type="AnimatedSprite2D" parent="Healthbar/HBoxContainer/Heart"]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_sgbo7")
+
+[node name="Heart2" type="TextureRect" parent="Healthbar/HBoxContainer"]
+layout_mode = 2
+
+[node name="Heart" type="AnimatedSprite2D" parent="Healthbar/HBoxContainer/Heart2"]
+texture_filter = 1
+position = Vector2(12, 0)
+sprite_frames = SubResource("SpriteFrames_sgbo7")
+
+[node name="Heart3" type="TextureRect" parent="Healthbar/HBoxContainer"]
+layout_mode = 2
+
+[node name="Heart" type="AnimatedSprite2D" parent="Healthbar/HBoxContainer/Heart3"]
+texture_filter = 1
+position = Vector2(24, 0)
+sprite_frames = SubResource("SpriteFrames_sgbo7")
+
+[node name="Heart4" type="TextureRect" parent="Healthbar/HBoxContainer"]
+layout_mode = 2
+
+[node name="Heart" type="AnimatedSprite2D" parent="Healthbar/HBoxContainer/Heart4"]
+texture_filter = 1
+position = Vector2(36, 0)
+sprite_frames = SubResource("SpriteFrames_sgbo7")
+
+[node name="Heart5" type="TextureRect" parent="Healthbar/HBoxContainer"]
+layout_mode = 2
+
+[node name="Heart" type="AnimatedSprite2D" parent="Healthbar/HBoxContainer/Heart5"]
+texture_filter = 1
+position = Vector2(48, 0)
+sprite_frames = SubResource("SpriteFrames_sgbo7")
