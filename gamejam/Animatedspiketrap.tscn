@@ -36,7 +36,7 @@ size = Vector2(26, 22)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D"]
 sprite_frames = SubResource("SpriteFrames_my1nx")
-frame_progress = 0.889912
+frame_progress = 0.990867
 
 [node name="Area2D" type="Area2D" parent="."]
 
