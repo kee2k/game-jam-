@@ -222,6 +222,7 @@ size = Vector2(10, 12)
 motion_mode = 1
 wall_min_slide_angle = 0.0
 script = ExtResource("1_i3pqv")
+SPEED = null
 acceleration = 50.0
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=872291189]
@@ -231,3 +232,11 @@ animation = &"move_up"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1866704398]
 position = Vector2(0, 2)
 shape = SubResource("RectangleShape2D_i3pqv")
+
+[node name="hp" type="ProgressBar" parent="." unique_id=1331612622]
+offset_left = 13.0
+offset_top = -13.0
+offset_right = 17.0
+offset_bottom = 14.0
+rotation = 1.5660132
+show_percentage = false
