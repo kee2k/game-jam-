@@ -1,26 +1,47 @@
 [gd_scene format=3 uid="uid://b2qadyd1evvr2"]
 
-[ext_resource type="Texture2D" path="res://Ui and buildings/spritesheets/pixil-frame-0.png" id="1_76aiv"]
+[ext_resource type="Texture2D" uid="uid://jy7jgva0awub" path="res://Ui and buildings/pixil-frame-0.png" id="1_27gb3"]
+[ext_resource type="Script" uid="uid://bhyjotbvtyfrn" path="res://button.gd" id="1_76aiv"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_27gb3"]
 
 [node name="Node2D" type="Node2D" unique_id=1702893015]
+
+[node name="PixilFrame1" type="Sprite2D" parent="." unique_id=1786272902]
+position = Vector2(633.00006, 352)
+scale = Vector2(18.18, 10.080001)
+texture = ExtResource("1_27gb3")
 
 [node name="PixilFrame0" type="Sprite2D" parent="." unique_id=1660611259]
 position = Vector2(567.25, 322.49997)
 scale = Vector2(11.554999, 6.4100003)
-texture = ExtResource("1_76aiv")
 
 [node name="Label" type="Label" parent="PixilFrame0" unique_id=1485384233]
-offset_left = -47.27391
-offset_top = -48.751945
-offset_right = 152.72609
-offset_bottom = 182.24805
-theme_override_font_sizes/font_size = 7
-text = "after wandering into 
-a mineshaft forfree coca-
-cola drinks our protagnist
-was trapped by a freak 
-landslide encircled 
-by the very prize he was
-promised he must..."
+offset_left = -73.92904
+offset_top = -80.4212
+offset_right = 126.07096
+offset_bottom = 150.5788
+theme_override_font_sizes/font_size = 11
+text = "𝚊𝚏𝚝𝚎𝚛 𝚠𝚊𝚗𝚍𝚎𝚛𝚒𝚗𝚐 𝚒𝚗𝚝𝚘  𝚊 
+𝚖𝚒𝚗𝚎𝚜𝚑𝚊𝚏𝚝 𝚏𝚘𝚛 𝚏𝚛𝚎𝚎 
+ 𝚌𝚘𝚕𝚊 𝚍𝚛𝚒𝚗𝚔𝚜 𝚘𝚞𝚛 
+𝚙𝚛𝚘𝚝𝚊𝚐𝚗𝚒𝚜𝚝 𝚠𝚊𝚜 
+𝚝𝚛𝚊𝚙𝚙𝚎𝚍 𝚋𝚢 𝚊 
+𝚏𝚛𝚎𝚊𝚔  𝚕𝚊𝚗𝚍𝚜𝚕𝚒𝚍𝚎 
+𝚎𝚗𝚌𝚒𝚛𝚌𝚕𝚎𝚍  𝚋𝚢 𝚝𝚑𝚎 𝚟𝚎𝚛𝚢 cola
+𝚑𝚎 𝚠𝚊𝚜 𝚙𝚛𝚘𝚖𝚒𝚜𝚎𝚍 𝚑𝚎 𝚖𝚞𝚜𝚝..."
 
 [node name="Camera2D" type="Camera2D" parent="PixilFrame0" unique_id=1768113392]
+position = Vector2(0.93033314, 0.54602647)
+
+[node name="Button" type="Button" parent="." unique_id=1346500085]
+offset_left = 919.0
+offset_top = 143.0
+offset_right = 1301.0
+offset_bottom = 321.0
+theme_override_font_sizes/font_size = 80
+theme_override_icons/icon = SubResource("CanvasTexture_27gb3")
+text = "NEXT"
+script = ExtResource("1_76aiv")
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

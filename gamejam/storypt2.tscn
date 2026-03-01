@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dgp6bc3cnvnwx"]
 
-[ext_resource type="Texture2D" path="res://Ui and buildings/spritesheets/Entrygameimage.png" id="1_wugmr"]
+[ext_resource type="Texture2D" uid="uid://ckg4d2tyyo0o0" path="res://pixilart-sprite.png" id="1_wugmr"]
+[ext_resource type="Script" uid="uid://habaetujm26v" path="res://button new.gd" id="2_6c2m6"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6c2m6"]
 atlas = ExtResource("1_wugmr")
@@ -80,13 +81,21 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Node2D" type="Node2D" unique_id=747706383]
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1974114977]
-position = Vector2(546, -270.5)
-scale = Vector2(11.92, 6.4100003)
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" unique_id=468250507]
+position = Vector2(176.99997, 91.99996)
+scale = Vector2(18.44, 9.9)
 sprite_frames = SubResource("SpriteFrames_ohq1j")
 autoplay = "default"
-frame_progress = 0.21122102
+frame_progress = 0.8309877
 
-[node name="Camera2D" type="Camera2D" parent="AnimatedSprite2D" unique_id=1276486058]
+[node name="Button" type="Button" parent="." unique_id=699599128]
+offset_left = 1.6268988
+offset_top = 4.242429
+offset_right = 46.6269
+offset_bottom = 35.242428
+text = "Next"
+script = ExtResource("2_6c2m6")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=956906332]
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

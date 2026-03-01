@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://g43ogox81hl2"]
 
-[ext_resource type="Texture2D" path="res://Ui and buildings/spritesheets/pixil-frame-0.png" id="1_cmhrf"]
+[ext_resource type="Script" uid="uid://dff3j8pjejrg0" path="res://mainmenu.gd" id="1_cmhrf"]
+[ext_resource type="Texture2D" uid="uid://jy7jgva0awub" path="res://Ui and buildings/pixil-frame-0.png" id="2_d2nv2"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_om1tu"]
 bg_color = Color(0.771429, 0.538614, 0.416914, 1)
@@ -17,11 +18,16 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_cmhrf")
+
+[node name="PixilFrame1" type="Sprite2D" parent="." unique_id=1334714069]
+position = Vector2(726.5, 613.5)
+scale = Vector2(20.81, 12.21)
+texture = ExtResource("2_d2nv2")
 
 [node name="PixilFrame0" type="Sprite2D" parent="." unique_id=509070384]
 position = Vector2(579.5, 322.00003)
 scale = Vector2(11.629999, 6.520001)
-texture = ExtResource("1_cmhrf")
 
 [node name="Button" type="Button" parent="." unique_id=1544532361]
 layout_mode = 1
@@ -88,3 +94,7 @@ theme_override_font_sizes/font_size = 50
 text = "Cavern Survival"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[connection signal="pressed" from="Button" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_Options_2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_Exit_3_pressed"]
