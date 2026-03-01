@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bt6uj4txyy1wx"
+path="res://.godot/imported/16-Havoc.mp3-809aae5864b87e8bf404aee00dadcf62.mp3str"
+
+[deps]
+
+source_file="res://Ui and buildings/PeriTune-2020_9-Battle_Tracks/16-Havoc.mp3"
+dest_files=["res://.godot/imported/16-Havoc.mp3-809aae5864b87e8bf404aee00dadcf62.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

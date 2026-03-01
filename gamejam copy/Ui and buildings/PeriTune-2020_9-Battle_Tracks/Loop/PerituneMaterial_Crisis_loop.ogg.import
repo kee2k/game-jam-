@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c1nu763loijyu"
+path="res://.godot/imported/PerituneMaterial_Crisis_loop.ogg-fae02fabe6e6f9bb403f517e46df0474.oggvorbisstr"
+
+[deps]
+
+source_file="res://Ui and buildings/PeriTune-2020_9-Battle_Tracks/Loop/PerituneMaterial_Crisis_loop.ogg"
+dest_files=["res://.godot/imported/PerituneMaterial_Crisis_loop.ogg-fae02fabe6e6f9bb403f517e46df0474.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bjrcp7cty2wbk"
+path="res://.godot/imported/PerituneMaterial_Raid2_loop.mp3-c0dedeb20af5d58631851a225c5b3331.mp3str"
+
+[deps]
+
+source_file="res://Ui and buildings/PeriTune-2020_9-Battle_Tracks/Loop/PerituneMaterial_Raid2_loop.mp3"
+dest_files=["res://.godot/imported/PerituneMaterial_Raid2_loop.mp3-c0dedeb20af5d58631851a225c5b3331.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://btvf7li6c41w3"
+path="res://.godot/imported/PerituneMaterial_Gothic_Dark_loop.ogg-f13099a99a7059bfbbdd28373db5bcf4.oggvorbisstr"
+
+[deps]
+
+source_file="res://Ui and buildings/PeriTune-2020_9-Battle_Tracks/Loop/PerituneMaterial_Gothic_Dark_loop.ogg"
+dest_files=["res://.godot/imported/PerituneMaterial_Gothic_Dark_loop.ogg-f13099a99a7059bfbbdd28373db5bcf4.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

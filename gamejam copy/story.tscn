@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://b2qadyd1evvr2"]
+
+[ext_resource type="Texture2D" path="res://Ui and buildings/spritesheets/pixil-frame-0.png" id="1_76aiv"]
+
+[node name="Node2D" type="Node2D" unique_id=1702893015]
+
+[node name="PixilFrame0" type="Sprite2D" parent="." unique_id=1660611259]
+position = Vector2(567.25, 322.49997)
+scale = Vector2(11.554999, 6.4100003)
+texture = ExtResource("1_76aiv")
+
+[node name="Label" type="Label" parent="PixilFrame0" unique_id=1485384233]
+offset_left = -47.27391
+offset_top = -48.751945
+offset_right = 152.72609
+offset_bottom = 182.24805
+theme_override_font_sizes/font_size = 7
+text = "after wandering into 
+a mineshaft forfree coca-
+cola drinks our protagnist
+was trapped by a freak 
+landslide encircled 
+by the very prize he was
+promised he must..."
+
+[node name="Camera2D" type="Camera2D" parent="PixilFrame0" unique_id=1768113392]

@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://gtavm3g5hcqn"]
+
+[ext_resource type="Texture2D" uid="uid://c3lsd6jy4bksv" path="res://Ui and buildings/Campfireanimated.png" id="1_oufq8"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b5him"]
+atlas = ExtResource("1_oufq8")
+region = Rect2(0, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y2ey3"]
+atlas = ExtResource("1_oufq8")
+region = Rect2(100, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dk7h0"]
+atlas = ExtResource("1_oufq8")
+region = Rect2(200, 0, 100, 100)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_t2ea5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b5him")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y2ey3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dk7h0")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" unique_id=1028103255]
+sprite_frames = SubResource("SpriteFrames_t2ea5")
+autoplay = "default"

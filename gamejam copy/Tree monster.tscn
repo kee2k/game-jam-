@@ -1,0 +1,111 @@
+[gd_scene format=3 uid="uid://er0fpfxbjxm1"]
+
+[ext_resource type="Script" uid="uid://vyjb8e46e3th" path="res://treemonster.gd" id="1_s08rr"]
+[ext_resource type="Texture2D" uid="uid://dn2ea2hwwa1bc" path="res://Sprites/Treemonster.png" id="1_vs24f"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_17h3b"]
+atlas = ExtResource("1_vs24f")
+region = Rect2(400, 16, 100, 49)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ugj1f"]
+atlas = ExtResource("1_vs24f")
+region = Rect2(500, 16, 100, 49)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e56nv"]
+atlas = ExtResource("1_vs24f")
+region = Rect2(100, 20, 100, 47)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vjgrq"]
+atlas = ExtResource("1_vs24f")
+region = Rect2(0, 20, 100, 47)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cbpdd"]
+atlas = ExtResource("1_vs24f")
+region = Rect2(700, 16, 100, 49)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3ac56"]
+atlas = ExtResource("1_vs24f")
+region = Rect2(600, 16, 100, 49)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6qo5t"]
+atlas = ExtResource("1_vs24f")
+region = Rect2(200, 16, 100, 47)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0cm3a"]
+atlas = ExtResource("1_vs24f")
+region = Rect2(300, 16, 100, 47)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hrlgh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_17h3b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ugj1f")
+}],
+"loop": true,
+"name": &"WalkBack",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e56nv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vjgrq")
+}],
+"loop": true,
+"name": &"WalkFoward",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cbpdd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3ac56")
+}],
+"loop": true,
+"name": &"WalkRight",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6qo5t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0cm3a")
+}],
+"loop": true,
+"name": &"Walkleft",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1d2wx"]
+size = Vector2(4, 32.5)
+
+[node name="TreeMonster" type="CharacterBody2D" unique_id=1343058644]
+motion_mode = 1
+wall_min_slide_angle = 0.0
+script = ExtResource("1_s08rr")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1212988365]
+texture_filter = 1
+position = Vector2(-2.5, 3)
+sprite_frames = SubResource("SpriteFrames_hrlgh")
+animation = &"WalkFoward"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=175429963]
+position = Vector2(-4, 6.75)
+shape = SubResource("RectangleShape2D_1d2wx")
+
+[node name="Timer" type="Timer" parent="." unique_id=550811563]
+wait_time = 0.087
+autostart = true
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="." unique_id=1345879004]
+debug_enabled = true
+debug_path_custom_color = Color(1, 0, 0, 1)
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

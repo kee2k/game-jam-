@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b5turqvoirpch"
+path="res://.godot/imported/PerituneMaterial_Havoc_loop_intro.mp3-5df643a94cfa2da6c184e05b527eea70.mp3str"
+
+[deps]
+
+source_file="res://Ui and buildings/PeriTune-2020_9-Battle_Tracks/Loop/PerituneMaterial_Havoc_loop_intro.mp3"
+dest_files=["res://.godot/imported/PerituneMaterial_Havoc_loop_intro.mp3-5df643a94cfa2da6c184e05b527eea70.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

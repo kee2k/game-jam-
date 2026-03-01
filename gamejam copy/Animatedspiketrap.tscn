@@ -1,0 +1,45 @@
+[gd_scene load_steps=7 format=3 uid="uid://cfgdv1tr26jxq"]
+
+[ext_resource type="Texture2D" uid="uid://6uloxg3nslfc" path="res://Ui and buildings/Walls and traps.png" id="1_ll7jr"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v2iub"]
+atlas = ExtResource("1_ll7jr")
+region = Rect2(200, 25, 50, 25)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2vfbl"]
+atlas = ExtResource("1_ll7jr")
+region = Rect2(300, 25, 50, 25)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e7f2k"]
+atlas = ExtResource("1_ll7jr")
+region = Rect2(400, 25, 50, 25)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_my1nx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v2iub")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2vfbl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e7f2k")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_je52f"]
+size = Vector2(26, 22)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_my1nx")
+frame_progress = 0.673007
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(3, -1)
+shape = SubResource("RectangleShape2D_je52f")

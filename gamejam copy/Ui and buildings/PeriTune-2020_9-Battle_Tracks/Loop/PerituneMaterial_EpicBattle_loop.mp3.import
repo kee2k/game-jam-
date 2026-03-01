@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c32x4fig1mkfw"
+path="res://.godot/imported/PerituneMaterial_EpicBattle_loop.mp3-38a8366ff3d1a698ec7b22a7414ce939.mp3str"
+
+[deps]
+
+source_file="res://Ui and buildings/PeriTune-2020_9-Battle_Tracks/Loop/PerituneMaterial_EpicBattle_loop.mp3"
+dest_files=["res://.godot/imported/PerituneMaterial_EpicBattle_loop.mp3-38a8366ff3d1a698ec7b22a7414ce939.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

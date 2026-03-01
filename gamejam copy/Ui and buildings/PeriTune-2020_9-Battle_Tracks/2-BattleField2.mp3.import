@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://do8rwcrswbavu"
+path="res://.godot/imported/2-BattleField2.mp3-97505c6c2506ca217cc91673862b02f1.mp3str"
+
+[deps]
+
+source_file="res://Ui and buildings/PeriTune-2020_9-Battle_Tracks/2-BattleField2.mp3"
+dest_files=["res://.godot/imported/2-BattleField2.mp3-97505c6c2506ca217cc91673862b02f1.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

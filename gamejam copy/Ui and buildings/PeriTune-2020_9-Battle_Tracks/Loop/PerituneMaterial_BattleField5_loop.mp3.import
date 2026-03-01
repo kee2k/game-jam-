@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bt06rvo76ekkw"
+path="res://.godot/imported/PerituneMaterial_BattleField5_loop.mp3-cfe2eea9b3c3de79afbae5b05242f88b.mp3str"
+
+[deps]
+
+source_file="res://Ui and buildings/PeriTune-2020_9-Battle_Tracks/Loop/PerituneMaterial_BattleField5_loop.mp3"
+dest_files=["res://.godot/imported/PerituneMaterial_BattleField5_loop.mp3-cfe2eea9b3c3de79afbae5b05242f88b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b4mj5mm547h5d"
+path="res://.godot/imported/PerituneMaterial_BattleField3_loop.ogg-7b2d76dc3d8597e44040b66cab98af0e.oggvorbisstr"
+
+[deps]
+
+source_file="res://Ui and buildings/PeriTune-2020_9-Battle_Tracks/Loop/PerituneMaterial_BattleField3_loop.ogg"
+dest_files=["res://.godot/imported/PerituneMaterial_BattleField3_loop.ogg-7b2d76dc3d8597e44040b66cab98af0e.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

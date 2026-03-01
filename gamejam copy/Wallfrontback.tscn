@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://xd8fprqygju8"]
+
+[ext_resource type="Texture2D" uid="uid://6uloxg3nslfc" path="res://Ui and buildings/Walls and traps.png" id="1_550lt"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_be1re"]
+size = Vector2(49, 34)
+
+[node name="Sprite2D" type="Sprite2D"]
+texture = ExtResource("1_550lt")
+region_enabled = true
+region_rect = Rect2(25.0483, 32.6316, 49.6858, 34.6126)
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_be1re")
