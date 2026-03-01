@@ -3,9 +3,6 @@
 [ext_resource type="Script" uid="uid://vyjb8e46e3th" path="res://treemonster.gd" id="1_s08rr"]
 [ext_resource type="Texture2D" uid="uid://dn2ea2hwwa1bc" path="res://Sprites/Treemonster.png" id="1_vs24f"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_1d2wx"]
-size = Vector2(4, 32.5)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_17h3b"]
 atlas = ExtResource("1_vs24f")
 region = Rect2(400, 16, 100, 49)
@@ -85,20 +82,23 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1d2wx"]
+size = Vector2(4, 32.5)
+
 [node name="TreeMonster" type="CharacterBody2D" unique_id=1343058644]
 motion_mode = 1
 wall_min_slide_angle = 0.0
 script = ExtResource("1_s08rr")
 
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1212988365]
+texture_filter = 1
+position = Vector2(-2.5, 3)
+sprite_frames = SubResource("SpriteFrames_hrlgh")
+animation = &"WalkFoward"
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=175429963]
 position = Vector2(-4, 6.75)
 shape = SubResource("RectangleShape2D_1d2wx")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CollisionShape2D" unique_id=1212988365]
-texture_filter = 1
-position = Vector2(1.5, -3.75)
-sprite_frames = SubResource("SpriteFrames_hrlgh")
-animation = &"WalkFoward"
 
 [node name="Timer" type="Timer" parent="." unique_id=550811563]
 wait_time = 0.087

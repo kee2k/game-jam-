@@ -1,5 +1,7 @@
 extends CharacterBody2D
 @onready var navigation_agent_2d: NavigationAgent2D = $NavigationAgent2D
+@onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
+
 
 
 const speed = 100
@@ -10,6 +12,7 @@ func _physics_process(delta: float) -> void:
 	#var dir = to_local(navigation_agent_2d.get_next_path_position()).normalized()
 	var dir = (player.global_position - global_position).normalized()
 	velocity = dir * speed 
+	animated_sprite_2d.play("WalkRight")
 	move_and_slide()
 
 func makepath() -> void:
