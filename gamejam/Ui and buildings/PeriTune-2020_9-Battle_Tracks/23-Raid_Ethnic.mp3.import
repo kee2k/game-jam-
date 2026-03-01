@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://3fxouybi0yi3"
+path="res://.godot/imported/23-Raid_Ethnic.mp3-546dab1c25828a5b18f5e1c0932d4197.mp3str"
+
+[deps]
+
+source_file="res://Ui and buildings/PeriTune-2020_9-Battle_Tracks/23-Raid_Ethnic.mp3"
+dest_files=["res://.godot/imported/23-Raid_Ethnic.mp3-546dab1c25828a5b18f5e1c0932d4197.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

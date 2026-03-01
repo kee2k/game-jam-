@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://chdhc1dbk6rvu"
+path="res://.godot/imported/PerituneMaterial_Prairie3_loop.ogg-9349bfd5a7e11e0c46d8b6b0c73516d7.oggvorbisstr"
+
+[deps]
+
+source_file="res://Ui and buildings/PeriTune-2020_9-Battle_Tracks/Loop/PerituneMaterial_Prairie3_loop.ogg"
+dest_files=["res://.godot/imported/PerituneMaterial_Prairie3_loop.ogg-9349bfd5a7e11e0c46d8b6b0c73516d7.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

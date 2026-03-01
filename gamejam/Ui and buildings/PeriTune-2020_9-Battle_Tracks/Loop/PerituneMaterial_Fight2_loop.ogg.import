@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b40vn8wpu2afd"
+path="res://.godot/imported/PerituneMaterial_Fight2_loop.ogg-8eba636a60edbf280990c042b2ca5c19.oggvorbisstr"
+
+[deps]
+
+source_file="res://Ui and buildings/PeriTune-2020_9-Battle_Tracks/Loop/PerituneMaterial_Fight2_loop.ogg"
+dest_files=["res://.godot/imported/PerituneMaterial_Fight2_loop.ogg-8eba636a60edbf280990c042b2ca5c19.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

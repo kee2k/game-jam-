@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bjcmr6ewegxwd"
+path="res://.godot/imported/25-Raid_FolkMetal2.mp3-10821818a918f531152e50216492ad03.mp3str"
+
+[deps]
+
+source_file="res://Ui and buildings/PeriTune-2020_9-Battle_Tracks/25-Raid_FolkMetal2.mp3"
+dest_files=["res://.godot/imported/25-Raid_FolkMetal2.mp3-10821818a918f531152e50216492ad03.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

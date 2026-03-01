@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dytj6ndlgwtjo"
+path="res://.godot/imported/PerituneMaterial_Raid_Ethnic_loop.ogg-e91ecfdd875444814a8d7578d3644630.oggvorbisstr"
+
+[deps]
+
+source_file="res://Ui and buildings/PeriTune-2020_9-Battle_Tracks/Loop/PerituneMaterial_Raid_Ethnic_loop.ogg"
+dest_files=["res://.godot/imported/PerituneMaterial_Raid_Ethnic_loop.ogg-e91ecfdd875444814a8d7578d3644630.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

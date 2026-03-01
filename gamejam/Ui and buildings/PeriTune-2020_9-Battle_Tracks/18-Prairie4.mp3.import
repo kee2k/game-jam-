@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://d2y17v0cmdwrp"
+path="res://.godot/imported/18-Prairie4.mp3-75ec37431fbe4eeaeb6a563547c1925f.mp3str"
+
+[deps]
+
+source_file="res://Ui and buildings/PeriTune-2020_9-Battle_Tracks/18-Prairie4.mp3"
+dest_files=["res://.godot/imported/18-Prairie4.mp3-75ec37431fbe4eeaeb6a563547c1925f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

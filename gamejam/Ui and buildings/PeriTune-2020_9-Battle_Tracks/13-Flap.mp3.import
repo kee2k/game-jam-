@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dtc46jant2x5n"
+path="res://.godot/imported/13-Flap.mp3-1d56bb4c7d8b3e7bb064f9cc6c049641.mp3str"
+
+[deps]
+
+source_file="res://Ui and buildings/PeriTune-2020_9-Battle_Tracks/13-Flap.mp3"
+dest_files=["res://.godot/imported/13-Flap.mp3-1d56bb4c7d8b3e7bb064f9cc6c049641.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b2g514w5ypdyk"
+path="res://.godot/imported/22-Raid3.mp3-d4d709fc5ba691c67fce2140e00fe2ad.mp3str"
+
+[deps]
+
+source_file="res://Ui and buildings/PeriTune-2020_9-Battle_Tracks/22-Raid3.mp3"
+dest_files=["res://.godot/imported/22-Raid3.mp3-d4d709fc5ba691c67fce2140e00fe2ad.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

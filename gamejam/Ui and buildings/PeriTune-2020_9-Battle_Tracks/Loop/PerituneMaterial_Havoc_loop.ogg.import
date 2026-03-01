@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://pc2mm88s40sd"
+path="res://.godot/imported/PerituneMaterial_Havoc_loop.ogg-7c5f4bbbd7ec21c363578e148f0aaceb.oggvorbisstr"
+
+[deps]
+
+source_file="res://Ui and buildings/PeriTune-2020_9-Battle_Tracks/Loop/PerituneMaterial_Havoc_loop.ogg"
+dest_files=["res://.godot/imported/PerituneMaterial_Havoc_loop.ogg-7c5f4bbbd7ec21c363578e148f0aaceb.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
