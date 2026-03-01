@@ -6,6 +6,11 @@ extends CharacterBody2D
 
 const speed = 75
 @export var player: CharacterBody2D
+var health: int = 8
+var damage: int = 2
+var can_damage: bool = true
+var damage_cooldown: float = 1.0
+var flash_tween: Tween
 #@onready var navigation_agent_2d:= $NavigationAgent2D as NavigationAgent2D
 
 func _physics_process(delta: float) -> void:
@@ -14,6 +19,25 @@ func _physics_process(delta: float) -> void:
 	velocity = dir * speed 
 	animated_sprite_2d.play("WalkRight")
 	move_and_slide()
+	
+	if can_damage and global_position.distance_to(player.global_position) < 30:
+		player.take_damage(damage)
+		can_damage = false
+		await get_tree().create_timer(damage_cooldown).timeout
+		can_damage = true
+
+func take_damage(amount: int) -> void:
+	_flash_red()
+	health -= amount
+	if health <= 0:
+		queue_free()
+
+func _flash_red() -> void:
+	if flash_tween:
+		flash_tween.kill()
+	flash_tween = create_tween()
+	flash_tween.tween_property(self, "modulate", Color.RED, 0.0)
+	flash_tween.tween_property(self, "modulate", Color.WHITE, 0.2)
 
 func makepath() -> void:
 	if player != null:

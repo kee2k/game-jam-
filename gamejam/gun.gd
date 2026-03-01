@@ -16,7 +16,7 @@ func  _ready() -> void:
 	
 	
 func _physics_process(delta: float) -> void:
-	rotation_offset.rotation = lerp_angle(rotation_offset.rotation, (get_global_mouse_position() - global_position).angle(), 4*delta)
+	rotation_offset.rotation = lerp_angle(rotation_offset.rotation, (get_global_mouse_position() - global_position).angle(), 10*delta)
 	shadow.position = Vector2(-2, 2).rotated(-rotation_offset.rotation)
 	
 	

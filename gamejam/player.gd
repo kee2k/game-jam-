@@ -1,26 +1,44 @@
 extends CharacterBody2D
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
+@onready var hitbox: CollisionShape2D = $hitbox
+@onready var hp_bar = $hp
 
 @export var SPEED := 300.0
 @export var acceleration := 10.0
 
-var health: int: set = _set_health
-func _set_health(value: int):
-	max_health = value
-	$hp.max_value = value
-var max_health: int: set = _set_max_health
+var health: int = 20: set = _set_health
+var max_health: int = 20
+var health_min = 0
+var flash_tween: Tween
 
-func _set_max_health(value: int):
-	max_health = value
-	$hp.max_value = value
+func _set_health(value: int):
+	health = value
+	if hp_bar:
+		hp_bar.value = health
+	if health <= 0:
+		queue_free()
 	
 func _ready():
-	max_health = 100
+	max_health = 20
+	health = 20
+	if hp_bar:
+		hp_bar.max_value = max_health
+		hp_bar.value = health
 	
 func take_damage(amount: int):
-	health -= amount
+	print("Player hit! Damage: ", amount, " Health: ", health - amount)
+	_flash_red()
+	self.health -= amount
+
+func _flash_red() -> void:
+	if flash_tween:
+		flash_tween.kill()
+	flash_tween = create_tween()
+	flash_tween.tween_property(self, "modulate", Color.RED, 0.0)
+	flash_tween.tween_property(self, "modulate", Color.WHITE, 0.2)
 
 var animation_direction: String = "down"
+
 var animation_state: String = ""
 
 func update_sprite_direction(input: Vector2) -> void:
