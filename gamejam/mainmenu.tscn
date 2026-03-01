@@ -1,0 +1,90 @@
+[gd_scene format=3 uid="uid://g43ogox81hl2"]
+
+[ext_resource type="Texture2D" path="res://Ui and buildings/spritesheets/pixil-frame-0.png" id="1_cmhrf"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_om1tu"]
+bg_color = Color(0.771429, 0.538614, 0.416914, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 16
+
+[node name="Mainmenu" type="Control" unique_id=795200187]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PixilFrame0" type="Sprite2D" parent="." unique_id=509070384]
+position = Vector2(579.5, 322.00003)
+scale = Vector2(11.629999, 6.520001)
+texture = ExtResource("1_cmhrf")
+
+[node name="Button" type="Button" parent="." unique_id=1544532361]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -254.0
+offset_top = -190.0
+offset_right = 253.0
+offset_bottom = -64.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_disabled_color = Color(0.791636, 0.323103, 0.525405, 1)
+theme_override_font_sizes/font_size = 45
+theme_override_styles/normal = SubResource("StyleBoxFlat_om1tu")
+text = "Start Game"
+
+[node name="Button2" type="Button" parent="." unique_id=784200290]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -253.0
+offset_top = -30.0
+offset_right = 254.0
+offset_bottom = 96.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_disabled_color = Color(0.791636, 0.323103, 0.525405, 1)
+theme_override_font_sizes/font_size = 45
+theme_override_styles/normal = SubResource("StyleBoxFlat_om1tu")
+text = "Options"
+
+[node name="Button3" type="Button" parent="." unique_id=1775699308]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -254.0
+offset_top = 124.0
+offset_right = 253.0
+offset_bottom = 250.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_disabled_color = Color(0.791636, 0.323103, 0.525405, 1)
+theme_override_font_sizes/font_size = 45
+theme_override_styles/normal = SubResource("StyleBoxFlat_om1tu")
+text = "Exit
+"
+
+[node name="Label" type="Label" parent="." unique_id=712117776]
+layout_mode = 0
+offset_left = 388.0
+offset_top = 18.0
+offset_right = 762.0
+offset_bottom = 105.0
+theme_override_font_sizes/font_size = 50
+text = "Cavern Survival"
+horizontal_alignment = 1
+vertical_alignment = 1
