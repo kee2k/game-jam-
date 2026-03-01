@@ -1,6 +1,7 @@
-[gd_scene load_steps=18 format=3 uid="uid://w0gbvjo0xocr"]
+[gd_scene format=3 uid="uid://w0gbvjo0xocr"]
 
 [ext_resource type="Texture2D" uid="uid://3syidlxpyvlq" path="res://Sprites/Rolling can.png" id="1_7vlam"]
+[ext_resource type="Script" uid="uid://dmiwh6wecfyqf" path="res://can_monster.gd" id="1_yri2t"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_23mxo"]
 size = Vector2(5, 4)
@@ -126,15 +127,15 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Can monster" type="Node2D"]
+[node name="CanMonster" type="CharacterBody2D" unique_id=444010844]
+motion_mode = 1
+script = ExtResource("1_yri2t")
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=974690359]
 position = Vector2(3.5, 0)
 shape = SubResource("RectangleShape2D_23mxo")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1615435262]
 texture_filter = 1
 position = Vector2(0, -4)
 sprite_frames = SubResource("SpriteFrames_1l54y")
